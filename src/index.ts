@@ -3,9 +3,9 @@ class Sorter {
     // constructor(collection: number[]) {
     //     this.collection = collection;
     // }
-
     /* Equivalent to above */
-    constructor(public collection: number[]) {}
+    // constructor(public collection: number[]) {}
+    constructor(public collection: number[] | string) {}
 
     /* bubble sort */
     sort(): void {
@@ -14,11 +14,13 @@ class Sorter {
         for (let i = 1; i < length; i++) {
             for (let j = 0; j < length - i; j++) {
                 // console.log(`${this.collection[j]} < ${this.collection[j+1]}`);
-                if (this.collection[j] > this.collection[j + 1]) {
-                    // console.log("--SWAP--");
-                    const leftHand = this.collection[j];
-                    this.collection[j] = this.collection[j + 1];
-                    this.collection[j + 1] = leftHand;
+                if (this.collection instanceof Array) {
+                    if (this.collection[j] > this.collection[j + 1]) {
+                        // console.log("--SWAP--");
+                        const leftHand = this.collection[j];
+                        this.collection[j] = this.collection[j + 1];
+                        this.collection[j + 1] = leftHand;
+                    }
                 }
             }
         }
