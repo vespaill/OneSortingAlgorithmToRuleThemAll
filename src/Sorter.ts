@@ -1,5 +1,5 @@
-import { NumbersCollection } from "./NumbersCollection";
-
+/* Interfaces make sure these methods exist and have the correct parameters. It
+   doesn't know if they are correctly implemented. */
 interface Sortable {
     length: number;
     compare(leftIndex: number, rightIndex: number): boolean;
