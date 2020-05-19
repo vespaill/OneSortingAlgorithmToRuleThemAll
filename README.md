@@ -1,3 +1,6 @@
+#### Goal
+-   Write a single sorting algorithm to work equally well on different data structures.
+
 #### TypeScript Compiler (tsc)
 
 -   tsc compiles TypeScript files into JavaScript.
