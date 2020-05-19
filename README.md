@@ -1,4 +1,4 @@
-#### Goal
+#### Goals
 -   Effectively use TypeScript Interfaces and Classes together.
 -   Write a single sorting algorithm to work equally well on different data structures.
 
